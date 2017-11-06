@@ -6,10 +6,10 @@
   	</head>
   	<body>
 		<header class="main-header">
+			<a class="main-header-logo">
+				<img src="http://placehold.it/150x100" alt="Логотип Нердс" width="10" height="10"> 
+			</a>
 			<nav class="main-navigation">
-				<a class="main-header-logo">
-					<img src="http://placehold.it/150x100" alt="Логотип Нердс" width="" height=""> 
-				</a>
 				<ul class="site-navigation">
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
@@ -17,7 +17,7 @@
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="user-navigation">
-					<li class="basket">Корзина</li>
+					<li class="cart">Корзина</li>
 				</ul>
 			</nav>
 		</header>
@@ -25,24 +25,24 @@
 		<main class="container">
 			<h1 class="visually-hidden">Веб-студия Нердс</h1>
 
-			<section class="slider">
-				<h2 class="visually-hidden">Слайдер</h2>
-				<div class="slider-1">
-					<p><b>Долго, дорого, скурпулезно.</b></p>
+			<section class="features">
+				<h2 class="visually-hidden">Наши преимущества</h2>
+				<div class="features-1">
+					<span class="features-strong">Долго, дорого, скурпулезно.</span>
 					<p>Математически выверенный дизайн для вашего сайта
 					или мобильного приложения.</p>
 					<a href="#">Узнать больше</a>
 					<span>...</span>
 				</div>
-				<div class="slider-2">
-					<p><b>Любим математику как никто другой</b></p>
+				<div class="features-2">
+					<span class="features-strong">Любим математику как никто другой</span>
 					<p>Никакого креатива, только математические формулы для расчета
 					идеальных пропорций.</p>
 					<a href="#">Узнать больше</a>
 					<span>...</span>
 				</div>
-				<div class="slider-3">
-					<p><b>Только ночь, только хардкор</b></p>
+				<div class="features-3">
+					<span class="features-strong">Только ночь, только хардкор</span>
 					<p>Работаем днем, как все? Мы против этого.
 					Ближе к полуночи работа только начинается.</p>
 					<a href="#">Узнать больше</a>
@@ -78,10 +78,12 @@
 				<h2 class="visually-hidden">О нас</h2>
 				<div class="about">
 					<h3 class="visually-hidden">Что же мы умеем</h3>
-					<p><b>
+					<span class="about-studio">
 						Мы -маленькая, но гордая дизайн студия из Краснодара.
-					</b></p>
-					<p>Выполняем заказы на разработку:</p>
+					</span>
+					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+					превыше креатива. Работаем не покладая рук, как роботыю</p>
+					<span class="about-strong">Выполняем заказы на разработку:</span>
 					<ul>
 						<li>Веб-сайтов любой сложности</li>
 						<li>Мобильных приложений для OS и Android</li>
@@ -91,9 +93,9 @@
 				<div class="statistics">
 					<h3 class="visually-hidden">Немного статистики</h3>
 					<img src="http://placehold.it/150x100" alt="Логотип веб-студии Нердс" width="150" height="100">
-					<p><b>
+					<span class="statistics-accuracy">
 						С 2004 года любим точность во всем:
-					</b></p>
+					</span>
 					<table>
 						<tr>
 							<th>146%</th>
@@ -131,20 +133,21 @@
     	
     	<footer class="main-footer">
     		<section class="contacts">
-    			<p><b>Nerds Design Studio</b></p>
+    			<h2 class="visually-hidden">Наши контакты</h2>
+    			<span class="contacts-nerds">Nerds Design Studio</span>
     			<p>191186, Санкт-Петербург,<br>
     			ул. Б. Конюшенная, д. 19/8</p>
     			<p>+7 (812) 275-275-275</p>
-    			<p><span class="button">Напишите нам</span></p> <!--Может это ссылка?-->
+    			<span class="button">Напишите нам</span> <!--Может это ссылка?-->
 			</section>
 			<!--Здесь будет карта-->
 			<div class="footer-social">
-				<ul>
-					<li><a class="social-button" href="#">Вконтакте</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
+				<ul class="footer-social-list">
+					<li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
+					<li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
+					<li><a class="social-button social-button-in" href="#">Инстаграм</a></li>
 				</ul>
-				<p><b>Давайте дружить, это выгодно!</b></p>
+				<span class="footer-social-friendship">Давайте дружить, это выгодно!</span>
 				<p>Скидка 10% для друзей из социальных сетей</p>
 			</div>
     	</footer>
