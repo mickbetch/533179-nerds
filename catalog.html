@@ -27,31 +27,38 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтры</h2>
 				<form action="#" method="post">
-				<!--Здесь будут фильтр стоимости-->
 
-				<!--Здесь будут фильтр сетки-->	
-					<span class="filters-item">Сетка</span><br>
-						<input id="adaptive" type="radio" name="layout" value="adaptive" checked>
-							<label for="adaptive">Адаптивная</label><br>
-						<input id="fixed" type="radio" name="layout" value="fixed">
-							<label for="fixed">Фиксированная</label><br> 
-						<input id="rubber" type="radio" name="layout" value="rubber">
+					<div class="filters-group">
+						<span class="filters-item">Стоимость</span>
+						<button type="button">от</button>
+						<button type="button">до</button>
+						<span>от</span><input type="text" value="0">
+						<span>до</span><input type="text" value="15000">
+					</div>
+
+					<div class="filters-group">
+						<span class="filters-item">Сетка</span><br>
+							<input id="adaptive" type="radio" name="layout" value="adaptive" checked>
+								<label for="adaptive">Адаптивная</label><br>
+							<input id="fixed" type="radio" name="layout" value="fixed">
+								<label for="fixed">Фиксированная</label><br> 
+								<input id="rubber" type="radio" name="layout" value="rubber">
 							<label for="rubber">Резиновая</label><br>
-					
-				<!--Здесь будут фильтр особенностей-->
-					<span class="filters-item">Особенности</span><br>
-						<input type="checkbox" name="features" id="slider" checked> 
-							<label for="slider">Слайдер</label><br>
-						<input type="checkbox" name="features" id="advantages"> 
-							<label for="advantages">Блок преимуществ</label><br>
-						<input type="checkbox" name="features" id="news" checked> 
-							<label for="news">Новости</label><br>
-						<input type="checkbox" name="features" id="gallery"> 
-							<label for="gallery">Галерея</label><br>
-						<input type="checkbox" name="features" id="kart"> 
-							<label for="kart">Корзина</label><br>
-				
-				<!--Здесь будет кнопка с текстом "Показать"-->
+					</div>
+					<div class="filters-group">
+						<span class="filters-item">Особенности</span><br>
+							<input type="checkbox" name="features" id="slider" checked> 
+								<label for="slider">Слайдер</label><br>
+							<input type="checkbox" name="features" id="advantages"> 
+								<label for="advantages">Блок преимуществ</label><br>
+							<input type="checkbox" name="features" id="news" checked> 
+								<label for="news">Новости</label><br>
+							<input type="checkbox" name="features" id="gallery"> 
+								<label for="gallery">Галерея</label><br>
+							<input type="checkbox" name="features" id="kart"> 
+								<label for="kart">Корзина</label><br>
+					</div>
+			
 					<button type="submit">Показать</button>
 
 				</form>
@@ -59,28 +66,31 @@
 
 			<section class="templates">
 
-			<!-- Сортировать и фильтр по цене, по типу, по названию -->	
+			<h2 class="visually-hidden">Наши работы</h2>
 				<div class="templates-filter">
 					<span class="templates-filter-title">Сортировать</span>
 					<ul class="templates-filter-list">
 						<li class="templates-filter-item active">
-							<button type="button">по цене</button>
+							<a href="#">по цене</a>
 						</li>
 						<li class="templates-filter-item active">
-							<button type="button">по типу</button>
+							<a href="#">по типу</a>
 						</li>
 						<li class="templates-filter-item active">
-							<button type="button">по названию</button>
+							<a href="#">по названию</a>
 						</li>
+					</ul>
+					<ul class="templates-filter-buttons">
+						<li><a href="#">по убыванию</a></li>
+						<li><a href="#">по возрастанию</a></li>
 					</ul>
 				</div>
 
 				<h2 class="visually-hidden">Примеры наших работ</h2>
 
-				<ul class="templates-list">
-					<li class="templates-item">
+				<div class="templates-list">
+					<article class="templates-item">
 						<a href="#">
-							<img src="img/browser.svg" alt="">
 							<img src="img/img-sedona.jpg" alt="Седона" width="360" height="576">
 							<div>
 								<h3>Седона</h3>
@@ -88,10 +98,9 @@
 								<span class="button-price">9 900 руб.</span>
 							</div>
 						</a>
-					</li>
-					<li class="templates-item">
+					</article>
+					<article class="templates-item">
 						<a href="#">
-							<img src="img/browser.svg" alt="">
 							<img src="img/img-pink.jpg" alt="Пинк" width="360" height="576">
 							<div>
 								<h3>Пинк</h3>
@@ -99,10 +108,9 @@
 								<span class="button-price">9 900 руб.</span>
 							</div>
 						</a>
-					</li>
-					<li class="templates-item">
+					</article>
+					<article class="templates-item">
 						<a href="#">
-							<img src="img/browser.svg" alt="">
 							<img src="img/img-barbershop.jpg" alt="Барбершоп" width="360" height="576">
 							<div>
 								<h3>Barbershop</h3>
@@ -110,10 +118,9 @@
 								<span class="button-price">9 900 руб.</span>
 							</div>
 						</a>
-					</li>
-					<li class="templates-item">
+					</article>
+					<article class="templates-item">
 						<a href="#">
-							<img src="img/browser.svg" alt="">
 							<img src="img/img-mishka.jpg" alt="Мишка" width="360" height="576">
 							<div>
 								<h3>Mishka</h3>
@@ -121,10 +128,9 @@
 								<span class="button-price">9 900 руб.</span>
 							</div>
 						</a>
-					</li>
-					<li class="templates-item">
+					</article>
+					<article class="templates-item">
 						<a href="#">
-							<img src="img/browser.svg" alt="">
 							<img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
 							<div>
 								<h3>A Plus</h3>
@@ -132,10 +138,9 @@
 								<span class="button-price">9 900 руб.</span>
 							</div>
 						</a>
-					</li>
-					<li class="templates-item">
+					</article>
+					<article class="templates-item">
 						<a href="#">
-							<img src="img/browser.svg" alt="">
 							<img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
 							<div>
 								<h3>Кваст</h3>
@@ -143,8 +148,8 @@
 								<span class="button-price">9 900 руб.</span>
 							</div>
 						</a>
-					</li>
-				</ul>
+					</article>
+				</div>
 
 				<div class="pagination">
 					<ul class="pagination-list">
@@ -158,18 +163,23 @@
 
 			<section class="feedback">
 				<h2 class="visually-hidden">Как с нами связаться</h2>
-				<a href="#"><span class="feedback-title">Напишите нам</span></a> <!-- Нужна ли здесь ссылка?????-->
+				<span class="feedback-title">Напишите нам</span>
 				<form action="#" method="post">
-					<label for="name-field">Ваше имя</label><br>
-					<input type="text" name="name" id="name-field"><br>
-					<label for="mail-field">Ваш e-mail</label><br>
-					<input type="text" name="mail" id="mail-field"><br>
-					<label for="comment-field">Текст письма</label><br>
-					<textarea name="comment" id="comment-field" rows="5">
-					</textarea>
-					<br>
+					<p>
+						<label for="name-field">Ваше имя</label>
+						<input type="text" name="name" id="name-field">
+					</p>
+					<p>
+						<label for="mail-field">Ваш e-mail</label>
+						<input type="text" name="mail" id="mail-field">
+					</p>
+					<p>
+						<label for="comment-field">Текст письма</label>
+						<textarea name="comment" id="comment-field" rows="5">
+						</textarea>
+					</p>
 					<input type="submit" value="Отправить">
-					<button type="button"></button> <!--закрытие формы "х" -->
+					<button type="button">Закрыть</button>
 				</form>
 			</section>
 		</main>
@@ -181,7 +191,7 @@
     			<p>191186, Санкт-Петербург,<br>
     			ул. Б. Конюшенная, д. 19/8</p>
     			<p>+7 (812) 275-275-275</p>
-    			<button type="button">Напишите нам</button> 
+    			<a href="#">Напишите нам</a> 
 			</section>
 			<div class="map">
 				<img src="img/map.png" alt="Интерактивная карта" width="1440" height="416">

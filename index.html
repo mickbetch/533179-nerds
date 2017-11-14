@@ -28,25 +28,37 @@
 			<section class="features">
 				<h2 class="visually-hidden">Наши преимущества</h2>
 				<div class="feature">
-					<span class="feature-title">Долго, дорого, скурпулезно.</span>
-					<p>Математически выверенный дизайн для вашего сайта
-					или мобильного приложения.</p>
-					<a href="#">Узнать больше</a>
-					<img src="img/slide1.png" alt="Математически выверенный дизайн" width="698" height="413">
+					<div class="feature-info">
+						<span class="feature-title">Долго, дорого, скурпулезно.</span>
+						<p>Математически выверенный дизайн для вашего сайта
+						или мобильного приложения.</p>
+						<a href="#">Узнать больше</a>
+					</div>
+					<div class="feature-img">
+						<img src="img/slide1.png" alt="Математически выверенный дизайн" width="698" height="413">
+					</div>
 				</div>
 				<div class="feature">
-					<span class="feature-title">Любим математику как никто другой</span>
-					<p>Никакого креатива, только математические формулы для расчета
-					идеальных пропорций.</p>
-					<a href="#">Узнать больше</a>
-					<img src="img/slide2.png" alt="Расчет идеальных пропорций" width="663" height="430">
+					<div class="feature-info">
+						<span class="feature-title">Любим математику как никто другой</span>
+						<p>Никакого креатива, только математические формулы для расчета
+						идеальных пропорций.</p>
+						<a href="#">Узнать больше</a>
+					</div>
+					<div class="feature-img">
+						<img src="img/slide2.png" alt="Расчет идеальных пропорций" width="663" height="430">
+					</div>
 				</div>
 				<div class="feature">
-					<span class="feature-title">Только ночь, только хардкор</span>
-					<p>Работаем днем, как все? Мы против этого.
-					Ближе к полуночи работа только начинается.</p>
-					<a href="#">Узнать больше</a>
-					<img src="img/slide3.png" alt="Работаем ночью" width="759" height="411">
+					<div class="feature-info">
+						<span class="feature-title">Только ночь, только хардкор</span>
+						<p>Работаем днем, как все? Мы против этого.
+						Ближе к полуночи работа только начинается.</p>
+						<a href="#">Узнать больше</a>
+					</div>
+					<div class="feature-img">
+						<img src="img/slide3.png" alt="Работаем ночью" width="759" height="411">
+					</div>
 				</div>
 				<!-- Здесь будет переключатель слайдера-->
 			</section>
@@ -67,7 +79,7 @@
 						<a href="#">Заказать</a>
 					</li>
 					<li class="sevices-item services-item-presentation">
-						<img src="img/illustration-2.png" alt="Презентации" width="300" height="146">
+						<img src="img/illustration-3.png" alt="Презентации" width="300" height="146">
 						<h3>Презентации</h3>
 						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 						<a href="#">Заказать</a>
@@ -135,20 +147,26 @@
 					</ul>
 				</div>
 			</section>
+			
 			<section class="feedback">
 				<h2 class="visually-hidden">Как с нами связаться</h2>
-				<a href="#"><span class="feedback-title">Напишите нам</span></a> <!-- Нужна ли здесь ссылка?????-->
+				<span class="feedback-title">Напишите нам</span>
 				<form action="#" method="post">
-					<label for="name-field">Ваше имя</label><br>
-					<input type="text" name="name" id="name-field"><br>
-					<label for="mail-field">Ваш e-mail</label><br>
-					<input type="text" name="mail" id="mail-field"><br>
-					<label for="comment-field">Текст письма</label><br>
-					<textarea name="comment" id="comment-field" rows="5">
-					</textarea>
-					<br>
+					<p>
+						<label for="name-field">Ваше имя</label>
+						<input type="text" name="name" id="name-field">
+					</p>
+					<p>
+						<label for="mail-field">Ваш e-mail</label>
+						<input type="text" name="mail" id="mail-field">
+					</p>
+					<p>
+						<label for="comment-field">Текст письма</label>
+						<textarea name="comment" id="comment-field" rows="5">
+						</textarea>
+					</p>
 					<input type="submit" value="Отправить">
-					<button type="button"></button> <!--закрытие формы "х" -->
+					<button type="button">Закрыть</button>
 				</form>
 			</section>
 		</main>
@@ -160,24 +178,18 @@
     			<p>191186, Санкт-Петербург,<br>
     			ул. Б. Конюшенная, д. 19/8</p>
     			<p>+7 (812) 275-275-275</p>
-    			<button type="button">Напишите нам</button> <!--Может это ссылка?-->
+    			<a href="#">Напишите нам</a>
 			</section>
 			<div class="map">
 				<img src="img/map.png" alt="Интерактивная карта" width="1440" height="416">
-				<img src="img/map-marker.png" alt="местоположение" width="231" height="190">
+				<img class="map-marker" src="img/map-marker.png" alt="местоположение" width="231" height="190">
 			</div>
 
 			<div class="footer-social">
 				<ul class="footer-social-list">
-					<li><a class="social-button social-button-vk" href="#">
-						Вконтакте <img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15"> <!--Скорее всего это фоновые рисунки-->
-					</a></li>
-					<li><a class="social-button social-button-fb" href="#">
-						Фейсбук <img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22">
-					</a></li>
-					<li><a class="social-button social-button-in" href="#">
-						Инстаграм <img src="img/insta-icon.svg" alt="Инстаграм" width="21" height="21">
-					</a></li>
+					<li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
+					<li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
+					<li><a class="social-button social-button-in" href="#">Инстаграм</a></li>
 				</ul>
 				<span class="footer-social-friendship">Давайте дружить, это выгодно!</span>
 				<p>Скидка 10% для друзей из социальных сетей</p>
