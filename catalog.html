@@ -3,6 +3,9 @@
   	<head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
   	</head>
   	<body>
 		<header class="main-header">
@@ -26,7 +29,7 @@
 		<main class="container">
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтры</h2>
-				<form action="#" method="post">
+				<form class="filters" action="#" method="post">
 
 					<div class="filters-group">
 						<span class="filters-item">Стоимость</span>
@@ -38,7 +41,8 @@
 
 					<div class="filters-group">
 						<span class="filters-item">Сетка</span><br>
-							<input id="adaptive" type="radio" name="layout" value="adaptive" checked>
+							<input class="visually-hidden" id="adaptive" type="radio" name="layout" value="adaptive" checked>
+							<span class="checkbox-indicator"></span>
 								<label for="adaptive">Адаптивная</label><br>
 							<input id="fixed" type="radio" name="layout" value="fixed">
 								<label for="fixed">Фиксированная</label><br> 
@@ -164,18 +168,18 @@
 			<section class="feedback">
 				<h2 class="visually-hidden">Как с нами связаться</h2>
 				<span class="feedback-title">Напишите нам</span>
-				<form action="#" method="post">
+				<form action="https://echo.htmlacademy.ru" method="post">
 					<p>
 						<label for="name-field">Ваше имя</label>
-						<input type="text" name="name" id="name-field">
+						<input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
 					</p>
 					<p>
 						<label for="mail-field">Ваш e-mail</label>
-						<input type="text" name="mail" id="mail-field">
+						<input type="email" name="mail" id="mail-field" placeholder="Для отправки ответа">
 					</p>
 					<p>
 						<label for="comment-field">Текст письма</label>
-						<textarea name="comment" id="comment-field" rows="5">
+						<textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме">
 						</textarea>
 					</p>
 					<input type="submit" value="Отправить">

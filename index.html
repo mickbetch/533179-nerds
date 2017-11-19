@@ -3,11 +3,17 @@
   	<head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
   	</head>
   	<body>
+
+  		<!-- Хедер -->
+
 		<header class="main-header">
 			<a class="main-header-logo">
-				<img src="img/nerds-logo.svg" alt="Веб-студия Нердс" width="160" height="65"> 
+				<img src="img/nerds-logo.svg" alt="Логотип Веб-студии Нердс" width="160" height="65"> 
 			</a>
 			<nav class="main-navigation">
 				<ul class="site-navigation">
@@ -22,9 +28,11 @@
 			</nav>
 		</header>
 
+		<!-- Главное содержимое страницы -->
 		<main class="container">
 			<h1 class="visually-hidden">Веб-студия Нердс</h1>
 
+		<!--Раздел с преимуществами, включает в себя слайдер-->
 			<section class="features">
 				<h2 class="visually-hidden">Наши преимущества</h2>
 				<div class="feature">
@@ -60,9 +68,22 @@
 						<img src="img/slide3.png" alt="Работаем ночью" width="759" height="411">
 					</div>
 				</div>
-				<!-- Здесь будет переключатель слайдера-->
+
+				<!-- Это кнопки слайдера -->
+				<ul class="features-slider-list">
+					<li class="features-slider-item">
+						<button type="button">Первый слайд</button>
+					</li>
+					<li class="features-slider-item">
+						<button type="button">Второй слайд</button>
+					</li>
+					<li class="features-slider-item">
+						<button type="button">Третий слайд</button>
+					</li>
+				</ul> 
 			</section>
 
+			<!--Раздел с услугами (веб-сайты, приложения, презентации) -->
 			<section class="services">
 				<h2 class="visually-hidden">Наши услуги</h2>
 				<ul class="services-list">
@@ -87,6 +108,8 @@
 				</ul>
 			</section>
 			
+
+			<!--Раздел студия Нердс ( о нас, интересная статистика, примеры работ - шаблоны сайтов) -->
 			<section class="studio">
 				<h2 class="visually-hidden">О нас</h2>
 
@@ -111,7 +134,7 @@
 					<span class="statistics-title">
 						С 2004 года любим точность во всем:
 					</span>
-					<table>
+					<table class="statistics-table">
 						<tr>
 							<th>146%</th>
 							<th>100%</th>
@@ -147,22 +170,24 @@
 					</ul>
 				</div>
 			</section>
-			
+
+
+			<!-- Раздел с всплывающей обратной формой связи -->
 			<section class="feedback">
 				<h2 class="visually-hidden">Как с нами связаться</h2>
 				<span class="feedback-title">Напишите нам</span>
-				<form action="#" method="post">
+				<form action="https://echo.htmlacademy.ru" method="post">
 					<p>
 						<label for="name-field">Ваше имя</label>
-						<input type="text" name="name" id="name-field">
+						<input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
 					</p>
 					<p>
 						<label for="mail-field">Ваш e-mail</label>
-						<input type="text" name="mail" id="mail-field">
+						<input type="email" name="mail" id="mail-field" placeholder="Для отправки ответа">
 					</p>
 					<p>
 						<label for="comment-field">Текст письма</label>
-						<textarea name="comment" id="comment-field" rows="5">
+						<textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме">
 						</textarea>
 					</p>
 					<input type="submit" value="Отправить">
@@ -171,7 +196,11 @@
 			</section>
 		</main>
     	
+
+    	<!-- Футер -->
     	<footer class="main-footer">
+
+    		<!-- Контактная информация -->
     		<section class="contacts">
     			<h2 class="visually-hidden">Наши контакты</h2>
     			<span class="contacts-nerds">Nerds Design Studio</span>
@@ -192,7 +221,7 @@
 					<li><a class="social-button social-button-in" href="#">Инстаграм</a></li>
 				</ul>
 				<span class="footer-social-friendship">Давайте дружить, это выгодно!</span>
-				<p>Скидка 10% для друзей из социальных сетей</p>
+				<p class="footer-social-sale">Скидка 10% для друзей из социальных сетей.</p>
 			</div>
     	</footer>
 
