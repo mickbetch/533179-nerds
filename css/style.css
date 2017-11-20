@@ -11,18 +11,30 @@ body {
 	background-color: #ffffff;
 }
 
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
 a {
 	text-decoration: none;
 }
 
 /* Селекторы для Хедера */
 .main-header {
+	margin: 0;
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
 	background-color: #eeeeee;
+}
+.container {
+	margin: 0;
 }
 
 .site-navigation,
@@ -34,20 +46,18 @@ a {
 .user-navigation a {
 	color: #000000;
 }
-
 .site-navigation a:hover,
 .user-navigation a:hover {
 	color: #fb565a;
 }
-
 .site-navigation a:active,
 .user-navigation a:active {
 	color: #000000;
 	opacity: 0.3;
 }
 
-.site-navigation a:focus,
-.user-navigation a:focus {
+.site-navigation a.active,
+.user-navigation a.active {
 	color: #000000;
 	border-bottom: 2px solid #fb565a;
 }
@@ -78,6 +88,7 @@ a {
 
 .feature-info a:active {
 	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .features-slider-list {
@@ -112,7 +123,7 @@ a {
 }
 .sevices-item-site a:active {
 	background-color: #d7373b;
-	opacity: 0.3;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -124,7 +135,7 @@ a {
 }
 .services-item-application a:active{
 	background-color: #00aa62;
-	opacity: 0.3;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .services-item-presentation a {
@@ -135,7 +146,7 @@ a {
 }
 .services-item-presentation a:active {
 	background-color: #e5a722;
-	opacity: 0.3;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -159,7 +170,7 @@ a {
 
 .statistics-table th {
 	font-size: 45px;
-	line-height: 10,06px;
+	line-height: 45px;
 	font-weight: 900;
 }
 .statistics-table td {
@@ -209,6 +220,7 @@ a {
 .feedback input:focus,
 .feedback textarea:focus {
 	border-color: #000000;
+	outline: none;
 }
 
 .feedback input[type="submit"] {
@@ -272,6 +284,7 @@ filters-group span {
 	color: #283136;
 }
 
+
 .filters-item {
 	font-size: 18px;
 	line-height: 30px;
@@ -293,6 +306,16 @@ filters-group span {
 	background-color: #eeeeee;
 }
 
+.filters button:hover {
+	background-color: #dfdfdf;
+}
+
+.filters button:active {
+	background-color: #d5d5d5;
+	outline: none;
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .templates-filter-title {
 	font-size: 18px;
 	line-height: 18px;
@@ -309,8 +332,18 @@ filters-group span {
 .templates-filter-item a {
 	font-size: 14px;
 	line-height: 18px;
-	color: #000000;
+	color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
+}
+.templates-filter-item a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+.templates-filter-item a:active {
+	color: rgb(0, 0, 0);
+}
+
+.templates-filter-buttons a {
+	opacity: 0.3;
 }
 
 .templates-item h3 {
@@ -334,6 +367,12 @@ filters-group span {
 	text-transform: uppercase;
 	background-color: #fb565a;
 }
+.templates-item .button-price:hover {
+	background-color: #e74246;
+}
+.templates-item .button-price:active {
+	background-color: #d7373b;
+}
 
 .pagination-list {
 	list-style: none;
@@ -345,4 +384,15 @@ filters-group span {
 	color: #000000;
 	text-transform: uppercase;
 	background-color: #eeeeee;
+}
+.pagination-item a:hover {
+	background-color: #dfdfdf;
+}
+.pagination-item a:active {
+	background-color: #d5d5d5;
+	color: rgba(0, 0, 0, 0.3);
+}
+.pagination-item a.active {
+	background-color: #fff;
+	border: 3px solid #dbdbdb;
 }
