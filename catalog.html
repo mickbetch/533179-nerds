@@ -9,7 +9,8 @@
   	</head>
   	<body>
   		
-		<header class="main-header">
+		<header class="main-header catalog-header">
+			
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
 					<img src="img/nerds-logo.svg" alt="Логотип Веб-студии Нердс" width="160" height="65"> 
@@ -24,14 +25,22 @@
 					<li class="cart"><a href="cart.html">Корзина</a></li>
 				</ul>
 			</nav>
-			<h1 class="page-title">Магазин готовых шаблонов</h1>		
+
+			<h1 class="page-title">Магазин готовых шаблонов</h1>
+
 		</header>
 
+
+
 		<main class="container">
+
+			<div class="container-wrapper">
 				<section class="filters">
 					<h2 class="visually-hidden">Фильтры</h2>
-						<form class="filters" action="#" method="post">
-							<div class="filters-group">
+
+						<form class="filters" action="https://echo.htmlacademy.ru" method="post">
+						<div class="filters-wrapper">
+							<div class="filters-group filter-group-price">
 								<span class="filters-item">Стоимость</span>
 								<button type="button">от</button>
 								<button type="button">до</button>
@@ -39,7 +48,7 @@
 								<span>до</span><input type="text" value="15000">
 							</div>
 
-							<div class="filters-group">
+							<div class="filters-group filters-group-layout">
 								<span class="filters-item">Сетка</span><br>
 								<input class="visually-hidden" id="adaptive" type="radio" name="layout" value="adaptive" checked>
 								<span class="checkbox-indicator"></span>
@@ -49,7 +58,8 @@
 								<input id="rubber" type="radio" name="layout" value="rubber">
 								<label for="rubber">Резиновая</label><br>
 							</div>
-							<div class="filters-group">
+							
+							<div class="filters-group filters-group-especial">
 								<span class="filters-item">Особенности</span><br>
 								<input type="checkbox" name="features" id="slider" checked> 
 								<label for="slider">Слайдер</label><br>
@@ -63,17 +73,22 @@
 								<label for="kart">Корзина</label><br>
 							</div>
 			
-							<button type="submit">Показать</button>
-	
+							<button class="filter-button" type="submit">Показать</button>
+						</div>
 						</form>
 				</section>
 
 
-				<section class="templates">
+				<section class="templates-catalog">
 
 					<h2 class="visually-hidden">Наши работы</h2>
+
 					<div class="templates-filter">
+						
 						<span class="templates-filter-title">Сортировать</span>
+						
+						<div class="temlates-filter-wrapper">
+
 						<ul class="templates-filter-list">
 							<li class="templates-filter-item active">
 								<a href="#">по цене</a>
@@ -89,10 +104,12 @@
 							<li><a href="#">по убыванию</a></li>
 							<li><a href="#">по возрастанию</a></li>
 						</ul>
+
+						</div>
 					</div>
 
-					<div class="templates-list">
-						<article class="templates-item">
+					<div class="templates-list-catalog">
+						<article class="templates-item-catalog">
 							<a href="#">
 								<img src="img/img-sedona.jpg" alt="Седона" width="360" height="576">
 								<div>
@@ -102,7 +119,7 @@
 								</div>
 							</a>
 						</article>
-						<article class="templates-item">
+						<article class="templates-item-catalog">
 							<a href="#">
 								<img src="img/img-pink.jpg" alt="Пинк" width="360" height="576">
 								<div>
@@ -112,7 +129,7 @@
 								</div>
 							</a>
 						</article>
-						<article class="templates-item">
+						<article class="templates-item-catalog">
 							<a href="#">
 								<img src="img/img-barbershop.jpg" alt="Барбершоп" width="360" height="576">
 								<div>
@@ -122,7 +139,7 @@
 								</div>
 							</a>
 						</article>
-						<article class="templates-item">
+						<article class="templates-item-catalog">
 							<a href="#">
 								<img src="img/img-mishka.jpg" alt="Мишка" width="360" height="576">
 								<div>
@@ -132,7 +149,7 @@
 								</div>
 							</a>
 						</article>
-						<article class="templates-item">
+						<article class="templates-item-catalog">
 							<a href="#">
 								<img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
 								<div>
@@ -142,7 +159,7 @@
 								</div>
 							</a>
 						</article>
-						<article class="templates-item">
+						<article class="templates-item-catalog">
 							<a href="#">
 								<img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
 								<div>
@@ -158,11 +175,11 @@
 							<li class="pagination-item"><a href="#" class="active">1</a></li>
 							<li class="pagination-item"><a href="#">2</a></li>
 							<li class="pagination-item"><a href="#">3</a></li>
-							<li class="pagination-item"><a href="#">Следующая</a></li>
+							<li class="pagination-item next"><a href="#">Следующая</a></li>
 						</ul>
 				</section>
 				
-				</div>
+				
 			
 			</div>	
 

@@ -438,7 +438,7 @@ filters-group span {
 }
 .pagination-item a.active {
 	background-color: #fff;
-	border: 3px solid #dbdbdb;
+	outline: 3px solid #dbdbdb;
 }
 
 
@@ -525,18 +525,18 @@ body {
 	display: flex;
 	justify-content: space-between;
 
-	width: 1129px;
+	width: 1160px;
 	min-height: 413px;
 	margin: 0 auto;
 	padding: 0;
 	padding-left: 20px;
-	padding-right: 51px;
+	padding-right: 20px;
 
 
 	outline: 2px solid red;
 }
 .feature-info {
-	width: 380px;
+	width: 400px;
 	min-height: 265px;
 	padding-top: 60px;
 }
@@ -549,6 +549,7 @@ body {
 	margin: 0;
 }
 .feature-img {
+
 	width:698; 
 	height:413;
 }
@@ -764,31 +765,153 @@ body {
 	outline: 2px solid red;s
 }
 
-/*
-.footer-social {
-	width: 960px;
+
+
+
+
+
+/* Стили для сетки catalog.html*/
+
+
+
+
+
+
+.main-header.catalog-header {
+	min-height: 355px;
+}
+.page-title {
+	display: block;
+
+	margin: 0;
+	padding: 0;
+
+	margin-top: 80px;
+
+	text-align: center;
+}
+
+
+
+.filters h2 {
+	margin: 0;
+	padding: 0;
+}
+form.filters {
+	margin: 0;
+	padding: 0;
+}
+.templates-catalog h2 {
+	margin: 0;
+	padding: 0;
+}
+.templates-filter-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+.templates-filter-buttons {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+.templates-item-catalog {
+	margin: 0;
+}
+.templates-item-catalog h3 {
+	margin: 0;
+	padding: 0;
+}
+.container-wrapper {
 	display: flex;
 	justify-content: space-between;
 
-	padding-left: 140px;
-	padding-right: 340px;
-	margin-top: 69px;
+	width: 1160px;
 
-	/* Временно для сетки */
-	/*
-	min-height: 80px;
-
+	padding: 0px 20px;
+	margin: 0 auto;
 }
-.footer-social-list {
-	width: 260px;
+.filters {
+	width: 300px;
+	margin-top: 54px;
+}
+.templates-catalog {
+	width: 760px;
+	margin-top: 54px;
+}
+
+.filters-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.filter-group-price {
+	margin-bottom: 55px;
+
+	min-height: 196px;
+}
+.filters-group-layout {
+	margin-bottom: 45px;
+
+	min-height: 123px;
+}
+.filter-button {
+	display: inline-block;
+
+	margin-top: 48px;
+	padding: 16px 88px;
+}
+
+
+
+.templates-filter {
+	display: flex;
+	justify-content: space-between;
+
+	width: 760px;
+}
+.templates-filter-title {
+	width: 160px;
+}
+.temlates-filter-wrapper {
+	width: 360px;
+}
+.temlates-filter-wrapper {
+	display: flex;
+}
+.templates-filter-list {
+	width: 280px;
+}
+.templates-filter-buttons {
+	width: 60px;
+}
+
+
+.templates-list-catalog {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.templates-item-catalog {
+	width: 360px;
+}
+
+.pagination-list {
+	display: flex;
+	justify-content: flex-start;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-}
-.footer-social-wrapper {
-	width: 560px;
+	width: 760px;
 }
 
+.pagination-item a {
+	padding: 18px;
+}
+.pagination-item {
+	margin-right: 18px;
+}
 /* Стили для сетки catalog.html*/
 
 
@@ -802,199 +925,3 @@ body {
 
 
 
-
-/*
-.main-header-wrapper {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
-	padding-left: 120px;
-	padding-right: 120px;
-	min-height: 132px;
-}
-.main-header-logo {
-	width: 160px;
-	margin-top: 50px;
-	margin-left: 20px;
-
-
-}
-.main-navigation {
-	margin: 0;
-	padding: 0;
-	width: 800px;
-	margin-right: 20px;
-	margin-top: 80px;
-
-	display: flex;
-	justify-content: space-between;
-}
-.site-navigation {
-	margin: 0;
-	padding: 0;
-	width: 440px;
-	display: flex;
-	justify-content: space-between;
-}
-.user-navigation {
-	margin: 0;
-	padding: 0;
-	width: 160px;
-}
-
-
-.services-list {
-	margin: 0;
-	padding: 0;
-	
-	display: flex;
-	justify-content: space-between;
-
-	min-height: 350px;
-	width: 1200px;
-	padding-top: 80px;
-	padding-right: 120px;
-	padding-left: 120px;
-	padding-bottom: 80px;
-}
-.sevices-item-site {
-	width: 300px;
-	min-height: 350px;
-	margin-left: 20px;
-}
-.services-item-application {
-	width: 300px;
-	min-height: 350px;
-}
-.services-item-presentation {
-	width: 300px;
-	min-height: 350px;
-	margin-right: 80px;
-}
-
-
-.studio {
-	margin: 0;
-	padding: 0;
-	padding-left: 120px;
-	padding-right: 120px;
-
-	display: flex;
-	flex-direction: column;
-
-}
-
-.about ul {
-	margin: 0;
-	padding: 0;
-}
-
-.about-statistics-columns {
-	display: flex;
-	justify-content: space-between;
-
-	width: 1160px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 80px;
-}
-.about {
-	width: 660px;
-}
-.statistics {
-	width: 360px;
-}
-
-
-.templates-list {
-	display: flex;
-	justify-content: space-between;
-
-	margin: 0
-	padding: 0;
-
-
-}
-.templates-item {
-	width: 260px;
-}
-.templates-item:first-child {
-	margin-left: 20px;
-}
-.templates-item:last-child {
-	margin-right: 20px;
-}
-
-.main-footer {
-	position: relative;
-}
-.contacts-wrapper {
-	position: absolute;
-	width: 319px;
-	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: #ffffff;
-	top: 56px;
-	left: 140px;
-}
-
-.footer-social {
-	display: flex;
-	padding-right: 120px;
-	padding-left: 120px;
-}
-
-.footer-social-list {
-	margin: 0;
-	padding: 0;
-
-	display: flex;
-	justify-content: space-between;
-
-	width: 260px;
-	margin-top: 70px;
-	margin-bottom: 70px;
-}
-
-.footer-social-wrapper {
-	width: 560px;
-	margin-left: 220px;
-	margin-top: 77px;
-	margin-bottom: 80px;
-}
-
-/* Стили для сетки Каталог 
-
-.page-title {
-	margin: 0;
-	display: block;
-	text-align: center;
-	margin-top: 97px;
-
-}
-.main-header {
-	padding-bottom: 117px;
-}
-
-.container-wrapper {
-	display: flex;
-
-	padding-left: 120px;
-	padding-right: 120px;
-}
-.filters-wrapper {
-	margin-left: 20px;
-	width: 260px;
-}
-.templates-wrapper {
-	margin-right: 20px;
-	width: 760px;
-}
-
-.templates-list {
-	display: flex;
-	flex-wrap: wrap;
-}
-*/
