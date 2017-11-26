@@ -781,16 +781,19 @@ body {
 .main-header.catalog-header {
 	min-height: 355px;
 }
+
 .page-title {
 	display: block;
 
 	margin: 0;
 	padding: 0;
 
-	margin-top: 80px;
+	margin-top: 62px;
 
 	text-align: center;
 }
+
+
 
 
 
@@ -818,103 +821,114 @@ form.filters {
 
 	list-style: none;
 }
-.templates-item-catalog {
-	margin: 0;
-}
 .templates-item-catalog h3 {
 	margin: 0;
 	padding: 0;
 }
-.container-wrapper {
+.pagination-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+
+.catalog-wrapper {
 	display: flex;
 	justify-content: space-between;
 
 	width: 1160px;
 
-	padding: 0px 20px;
-	margin: 0 auto;
+	outline: 2px solid red;
 }
 .filters {
-	width: 300px;
-	margin-top: 54px;
+	width: 260px;
+
+	outline: 2px solid red;
 }
 .templates-catalog {
 	width: 760px;
-	margin-top: 54px;
-}
 
-.filters-wrapper {
-	display: flex;
-	flex-direction: column;
+	outline: 2px solid red;
 }
-.filter-group-price {
-	margin-bottom: 55px;
-
-	min-height: 196px;
-}
-.filters-group-layout {
-	margin-bottom: 45px;
-
-	min-height: 123px;
-}
-.filter-button {
-	display: inline-block;
-
-	margin-top: 48px;
-	padding: 16px 88px;
-}
-
 
 
 .templates-filter {
 	display: flex;
 	justify-content: space-between;
-
-	width: 760px;
 }
 .templates-filter-title {
 	width: 160px;
-}
-.temlates-filter-wrapper {
-	width: 360px;
+
+	outline: 2px solid red;
 }
 .temlates-filter-wrapper {
 	display: flex;
+
+	width: 360px;
+
+	outline: 2px solid red;
 }
 .templates-filter-list {
 	width: 280px;
-}
-.templates-filter-buttons {
-	width: 60px;
-}
 
+	outline: 2px solid red;
+}
 
 .templates-list-catalog {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+
+	width: 760px;
+
+	outline: 2px solid red;
 }
 .templates-item-catalog {
 	width: 360px;
+
+	outline: 2px solid red;
 }
+
 
 .pagination-list {
 	display: flex;
-	justify-content: flex-start;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	width: 760px;
-}
 
-.pagination-item a {
-	padding: 18px;
-}
-.pagination-item {
-	margin-right: 18px;
+	width: 460px;
+	margin-top: 60px;
+
+	outline: 2px solid red;
+
 }
 
 
+
+.filter-group-price {
+	margin-top: 55px;
+	margin-bottom: 55px;
+
+	min-height: 195px;
+
+	outline: 2px solid red;
+}
+.filters-group-layout {
+	margin-bottom: 46px;
+
+	min-height: 123px;
+
+	outline: 2px solid red;
+}
+.filters-group-especial {
+	margin-bottom: 48px;
+
+	min-height: 228px;
+
+	outline: 2px solid red;
+}
+
+.templates-catalog {
+	margin-top: 52px;
+}
 */
 
 
