@@ -38,7 +38,18 @@
 					
 				<div class="container">
 
-					<div class="feature">
+						<input type="radio" id="btn-1" name="toggle" checked>
+                		<input type="radio" id="btn-2" name="toggle">
+                		<input type="radio" id="btn-3" name="toggle">
+                <div class="slider-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+                </div>
+				<div class="slider-inner">
+
+				<div class="slider-slides">
+					<div class="feature slide-1">
 						<div class="feature-info">
 							<span class="feature-title">Долго, дорого, скрупулезно.</span>
 							<p>Математически выверенный дизайн<br>
@@ -50,7 +61,7 @@
 						</div>
 					</div>
 
-					<div class="feature">
+					<div class="feature slide-2">
 						<div class="feature-info">
 							<span class="feature-title">Любим математику как никто другой</span>
 							<p>Никакого креатива, только математические формулы для расчета
@@ -62,7 +73,7 @@
 						</div>
 					</div>
 
-					<div class="feature">
+					<div class="feature slide-3">
 						<div class="feature-info">
 							<span class="feature-title">Только ночь, только хардкор</span>
 							<p>Работаем днем, как все? Мы против этого.
@@ -74,7 +85,8 @@
 						</div>
 					</div>
 
-					<ul class="features-slider-list">
+
+				<!--	<ul class="features-slider-list">
 						<li class="features-slider-item">
 							<button type="button">Первый слайд</button>
 						</li>
@@ -84,8 +96,10 @@
 						<li class="features-slider-item">
 							<button type="button">Третий слайд</button>
 						</li>
-					</ul> 
+					</ul> -->
 
+				</div>
+				</div>
 				</div>
 
 			</section>
@@ -136,14 +150,14 @@
 					<div class="about">
 						<h3 class="visually-hidden">Что же мы умеем</h3>
 						<span class="studio-title">
-						Мы -маленькая, но гордая дизайн студия из Краснодара.
+						Мы - маленькая, но гордая дизайн студия из Краснодара.
 						</span>
 						<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
 						превыше креатива. Работаем не покладая рук, как роботы.</p>
 						<span class="about-title">Выполняем заказы на разработку:</span>
 						<ul>
 							<li>Веб-сайтов любой сложности</li>
-							<li>Мобильных приложений для OS и Android</li>
+							<li>Мобильных приложений для iOS и Android</li>
 							<li>Слайдшоу и видео для корпоративных презентаций</li>
 						</ul>
 					</div>
@@ -156,14 +170,14 @@
 						</span>
 						<table class="statistics-table">
 							<tr>
-								<th>146%</th>
-								<th>100%</th>
-								<th>50%</th>
+								<th>146<sup>%</sup></th>
+								<th>100<sup>%</sup></th>
+								<th>50<sup>%</sup></th>
 							</tr>
 							<tr>
-								<td>уровень самоотдачи</td>
-								<td>соблюдение сроков</td>
-								<td>минимальная предоплата</td>
+								<td>Уровень самоотдачи</td>
+								<td>Соблюдение сроков</td>
+								<td>Минимальная предоплата</td>
 							</tr>
 						</table>
 					</div>
@@ -192,31 +206,35 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			
 			</section>
+			</div> 
 
-
-			<section class="feedback visually-hidden">
+			<section class="feedback visualy-hidden">
 				<h2 class="visually-hidden">Как с нами связаться</h2>
-				
-				<span class="feedback-title">Напишите нам</span>
+
+				<div class="feedback-container">
 				<form action="https://echo.htmlacademy.ru" method="post">
-					<p>
+					<span class="feedback-title">Напишите нам</span>
+				<div class="feedback-wrapper">
+					<p class="half-width">
 						<label for="name-field">Ваше имя</label>
 						<input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
 					</p>
-					<p>
+					<p class="half-width">
 						<label for="mail-field">Ваш e-mail</label>
 						<input type="email" name="mail" id="mail-field" placeholder="Для отправки ответа">
 					</p>
-					<p>
+					<p class="full-width">
 						<label for="comment-field">Текст письма</label>
 						<textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме">
 						</textarea>
 					</p>
+				</div>
 					<input type="submit" value="Отправить">
-					<button type="button">Закрыть</button>
+					<button class="feedback-close" type="button">Закрыть</button>
 				</form>
+				</div>
 			</section>
 
 		</main>
@@ -226,15 +244,15 @@
 
     	<footer class="main-footer">
 
-
+		<div class="full-map">
     		<section class="contacts">
     			
     			<h2 class="visually-hidden">Наши контакты</h2>
     			<div class="contacts-wrapper">
     			<span class="contacts-nerds">Nerds Design Studio</span>
-    			<p>191186, Санкт-Петербург,<br>
+    			<p class="adress">191186, Санкт-Петербург,<br>
     			ул. Б. Конюшенная, д. 19/8</p>
-    			<p>+7 (812) 275-275-275</p>
+    			<p class="phone">тел. +7 (812) 275-275-275</p>
     			<a href="#">Напишите нам</a>
     			</div>
 			</section>
@@ -243,13 +261,13 @@
 				<img class="map-interactive" src="img/map.png" alt="Интерактивная карта" width="1440" height="416">
 				<img class="map-marker" src="img/map-marker.png" alt="местоположение" width="231" height="190">
 			</div>
-
+		</div>
 			<div class="container">
 			<div class="footer-social">
 				<ul class="footer-social-list">
-					<li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
-					<li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
-					<li><a class="social-button social-button-in" href="#">Инстаграм</a></li>
+					<li><a class="social-button social-button-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+					<li><a class="social-button social-button-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+					<li><a class="social-button social-button-in" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
 				</ul>
 				
 				<div class="footer-social-wrapper">
