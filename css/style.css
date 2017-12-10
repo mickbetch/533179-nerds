@@ -387,6 +387,7 @@ a {
 	display: block;
 	margin: 0;
 	margin-bottom: 22px;
+	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
 	color: #000000;
@@ -407,6 +408,8 @@ a {
 }
 .full-map {
 	position: relative;
+	width: 1440px;
+	margin: 0 auto;
 }
 .contacts {
 	position: absolute;
@@ -457,31 +460,6 @@ a {
 .social-button:active path {
 	opacity: 0.3;
 }
-
-/*
-.social-button-vk {
-	display: inline-block;
-	width: 79px;
-	height: 79px;
-	font-size: 0;
-	
-	border-radius: 50%;
-}
-.social-button-fb {
-	display: inline-block;
-	width: 79px;
-	height: 79px;
-	font-size: 0;
-	border-radius: 50%;
-}
-
-.social-button-in {
-	display: block;
-	width: 79px;
-	height: 79px;
-	font-size: 0;
-	border-radius: 50%;
-}*/
 .footer-social-friendship {
 	font-size: 36px;
 	line-height: 36px;
@@ -490,6 +468,8 @@ a {
 }
 
 .footer-social-sale {
+	margin: 0;
+	margin-top: 7px;
 	line-height: 22px;
 	color: #444444;
 }
@@ -509,7 +489,6 @@ a {
   
   
   border: none;
-  cursor: pointer;
 }
 .filter-item legend {
  	font-size: 18px;
@@ -883,6 +862,7 @@ main h1 {
 .sevices-item p {
 	margin: 0;
 	padding: 0;
+	width: 260px;
 }
 .sevices-item a {
 	display: inline-block;
@@ -1397,7 +1377,7 @@ form.filters {
 .contacts a {
 	display: inline-block;
 	margin-top: 36px;
-	padding: 18px 45px;
+	padding: 16px 45px;
 	border-radius: 3px;
 }
 
@@ -1432,6 +1412,7 @@ form.filters {
 	height: 17px;
 
 	background-color: #fff;
+	background-size: contain;
 	border-radius: 50%;
 	box-shadow: 0 0 0 4px #4d4d4d;
 	opacity: 0.4;
@@ -1574,6 +1555,13 @@ a[href].main-header-logo:active img {
 	border-radius: 3px;
 	color: #fff;
 }
+.templates-description .button-price:hover {
+	background-color: #e74246;
+}
+.templates-description .button-price:active {
+	background-color: #d7373b;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
 /* Стилизаия шаблонов */
 
 
@@ -1701,9 +1689,12 @@ a[href].main-header-logo:active img {
   	font-weight: 500;
 }
 .slider-item p {
-  	max-width: 430px;
+  	max-width: 363px;
   	margin: 0;
   	margin-bottom: 38px;
+}
+.slider-item .max-width {
+	max-width: 415px;
 }
 .button {
   display: block;
