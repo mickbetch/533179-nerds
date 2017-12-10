@@ -590,6 +590,7 @@ a {
 .filters-group label {
 	line-height: 20px;
 	color: #283136;
+	cursor: pointer;
 }
 
 .filters button {
@@ -1416,6 +1417,7 @@ form.filters {
 	border-radius: 50%;
 	box-shadow: 0 0 0 4px #4d4d4d;
 	opacity: 0.4;
+	cursor: pointer;
 }
 input[name="layout"]:checked ~ .radio-indicator {
 
@@ -1441,6 +1443,7 @@ input[name="layout"]:disabled ~ .radio-indicator {
 	height: 28px;
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
+	cursor: pointer;
 
 	opacity: 0.4;
 }
