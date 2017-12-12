@@ -343,6 +343,9 @@ a {
 .full-map {
   position: relative;
 }
+.map-interactive {
+	width: 100%;
+}
 .contacts {
   position: absolute;
   top: 55px;
